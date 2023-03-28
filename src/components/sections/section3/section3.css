@@ -1,0 +1,124 @@
+#section3{
+    min-height: 90vh;
+}
+
+#section3-title{
+    font-size: 8vmin;
+    color:var(--font-color);
+    text-align: center;
+    margin-bottom: 15vh;
+}
+
+#section3-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+#section3-buttons button{
+    padding: 2vh;
+    font-size: 1.2em;
+    color: var(--font-color);
+    background-color: #0d0720;
+    border: none;
+    border-left: solid 1px var(--font-color);
+    box-shadow: 0px 1px 10px #0d0720;
+    max-width: 35vw;
+    margin: 9vh 0;
+}
+
+
+.section3-data-back-end{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    margin:5vh 4vw;
+    margin-right: 3vw;
+}
+
+#my-projects-back{
+    color: var(--font-color);
+    grid-template-columns:  1fr 1fr 1fr;
+    display: grid;
+}
+
+
+.project-class-back{
+    padding: 2vh;
+    margin: 1vh;
+    max-width: 21vw;
+    background-color: #0d0720;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px var(--font-color);
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+
+
+@media(max-width:1450px){    
+    #my-projects-back{
+        grid-template-columns:  1fr  1fr;
+    }
+    .project-class-back{
+        max-width: 35vw;
+    }
+}
+
+@media(max-width:1150px){    
+    #my-projects-back{
+        grid-template-columns:  1fr;
+
+    }
+    .section3-data-back-end{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-class-back{
+        max-width: 77vw;
+        margin: 3vh 0;
+    }
+
+    #section3-title{
+        margin-bottom: 5vh;
+    }
+
+}
+
+@media(max-width:500px){
+    #section3-title{
+        margin: 3vh 0;
+    }
+    #section3-buttons button{
+        margin:4vh 0;
+    }
+    .section3-data-back-end{
+        margin: 0 1vh;
+    }
+}
+
+
+.project-class-back:hover{
+    background-color: #080415;
+}
+
+.project-text{
+    font-size: 0.9em;
+}
+
+.project-class-back a{
+    color: var(--font-color);
+    margin-bottom: 1vh;
+}
+
+.project-title{
+    font-size: 1.4em;
+    margin:2vh 0;
+}
+
+.project-title-cc{
+    font-size: 1.2em;
+    margin:1vh 0;
+}
+
